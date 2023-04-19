@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="aaa.jpg">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title style="font-family:comic sans ms;">A square</title>
+    
+    <style type="text/css">
+        ul#demo
+    {
+        max-height:100px;
+        transition:all 1s;
+        overflow-y: hidden;
+        background:linear-gradient(90deg,black,white);
+    }
+    body{
+        background:linear-gradient(90deg,black,blue,cyan);
+        color:white;
+        font-family:audiowide;
+        
+        
+    }
+    button{
+        box-shadow:0 10px 31px rgba(0, 0, 0, 0.139),0 19px 30px rgba(0,0,0,0,5);
+        
+    }
+    a{
+        font-family:comic sans ms;
+        color:aquamarine;
+
+    }
+    a:hover{
+        font-family:audiowide;
+        color:lime;
+        transition:1.5s;
+    }
+    .card{
+        
+        width:250px;
+        box-shadow:0 15px 30px rgba(0,0,0,0.30),0 11px 8px rgba(0,0,0,0.3);
+        box-sizing:border-box;
+        transition-duration:1s;
+        align-items: center;
+
+    }
+    .card>img{
+        display:block;
+        max-width:100%;
+        height:auto;
+        margin:0px;
+        
+    
+    }
+    .card>p{
+        font-family:comic sans ms;
+        padding:0px 10px 10px 10px;
+        text-align:center;
+
+    }
+    .card:hover{
+        box-shadow:0 20px 39px rgba(0,0,0,0.5),0 14px 11px rgba(0,0,0,0.22);
+        width:270px;
+    }
+    
+    </style>
+</head>
+<body>
+    <ul id="demo">
+        <li><a href="https://www.youtube.com/watch?v=fV4DiAyExN0&ab_channel=HoobastankVEVO" target="new">The Reason</a></li>
+        <li><a href="https://www.youtube.com/watch?v=sjDj3cRvFb4&ab_channel=TipsPunjabi" target="new">Athra Style</a></li>
+        <li><a href="https://www.youtube.com/watch?v=Soa3gO7tL-c&ab_channel=GreenDay" target="new">Broken Dreams</a></li>
+    </ul>
+    <button onclick="slideUp()">Slide up</button>
+    <button onclick="slideDown()">Slide Down</button>
+    <p>Click her to see the effects</p>
+    <div class="card">
+    <img src="jerry.jpg">
+    <p>Just a small try</p>
+    </div>
+    <script>
+        function slideUp(){
+            let elm=document.getElementById("demo");
+            elm.style.maxHeight="0px";
+        }
+        function slideDown(){
+            let elm=document.getElementById("demo");
+            elm.style.maxHeight="100px";
+        }
+    </script>
+</body>
+
+<footer style="position:absolute;">Created by Anchu and Ayon</footer>
+</html>
