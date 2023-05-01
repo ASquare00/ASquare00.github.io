@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+
+
+
 <html lang="en">
     <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
     <link rel="icon" type="image/x-icon" href="aaa.jpg">
@@ -14,7 +16,7 @@
         max-height:100px;
         transition:all 1s;
         overflow-y: hidden;
-        background:linear-gradient(90deg,black,white);
+        background:linear-gradient(90deg,rgb(48, 89, 255),rgb(0, 255, 229));
     }
     body{
         background:linear-gradient(90deg,black,blue,cyan);
@@ -68,18 +70,21 @@
     </style>
 </head>
 <body>
+    <p>Hover to see the effects</p>
+    <div class="card">
+    <img src="jerry.jpg">
+    <p>Just a small try</p>
+ 
+    </div>
+    <hr>
     <ul id="demo">
         <li><a href="https://www.youtube.com/watch?v=fV4DiAyExN0&ab_channel=HoobastankVEVO" target="new">The Reason</a></li>
         <li><a href="https://www.youtube.com/watch?v=sjDj3cRvFb4&ab_channel=TipsPunjabi" target="new">Athra Style</a></li>
         <li><a href="https://www.youtube.com/watch?v=Soa3gO7tL-c&ab_channel=GreenDay" target="new">Broken Dreams</a></li>
     </ul>
-    <button onclick="slideUp()">Slide up</button>
-    <button onclick="slideDown()">Slide Down</button>
-    <p>Click her to see the effects</p>
-    <div class="card">
-    <img src="jerry.jpg">
-    <p>Just a small try</p>
-    </div>
+    <button onclick="slideUp()">Show Less</button>
+    <button onclick="slideDown()">Show More</button>
+    <p>Click here to see the effects</p>
     <script>
         function slideUp(){
             let elm=document.getElementById("demo");
@@ -90,6 +95,10 @@
             elm.style.maxHeight="100px";
         }
     </script>
+<hr>
+<p>
+    <a href="contacts.html" target="_blank">Contact Information</a>
+</p>
 </body>
 
 <footer style="position:absolute;">Created by Anchu and Ayon</footer>

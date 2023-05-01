@@ -1,0 +1,60 @@
+ul#demo
+{
+    max-height:100px;
+    transition:all 1s;
+    overflow-y: hidden;
+    background:linear-gradient(90deg,black,white);
+}
+body{
+    background:linear-gradient(90deg,black,blue,cyan);
+    color:white;
+    font-family:audiowide;
+    
+    
+}
+button{
+    box-shadow:0 10px 31px rgba(0, 0, 0, 0.139),0 19px 30px rgba(0,0,0,0,5);
+    
+}
+
+a{
+    font-family:comic sans ms;
+    color:aquamarine;
+
+}
+
+a:hover{
+    font-family:audiowide;
+    color:lime;
+    transition:1.5s;
+}
+
+.card{
+    
+    width:250px;
+    box-shadow:0 15px 30px rgba(0,0,0,0.30),0 11px 8px rgba(0,0,0,0.3);
+    box-sizing:border-box;
+    transition-duration:1s;
+    align-items: center;
+
+}
+.card>img{
+    display:block;
+    max-width:100%;
+    height:auto;
+    margin:0px;
+    
+
+}
+.card>p{
+    font-family:comic sans ms;
+    padding:0px 10px 10px 10px;
+    text-align:center;
+
+}
+
+.card:hover{
+    box-shadow:0 20px 39px rgba(0,0,0,0.5),0 14px 11px rgba(0,0,0,0.22);
+    width:270px;
+}
+
